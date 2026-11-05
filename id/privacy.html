@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kebijakan Privasi · Saku</title>
+  <meta name="description" content="Data apa yang dipakai Saku, ke mana perginya, dan cara kamu tetap memegang kendali, termasuk Google Tasks.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#2b1b3a">
+  <link rel="icon" href="../assets/icon.png">
+  <link rel="apple-touch-icon" href="../assets/icon.png">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="band">
+    <div class="wrap">
+      <header class="top">
+        <a class="brand" href="./"><img src="../assets/icon.png" alt="" width="30" height="30">Saku</a>
+        <nav aria-label="Situs">
+          <a href="privacy.html" aria-current="page">Kebijakan Privasi</a>
+          <a href="terms.html">Ketentuan Penggunaan</a>
+          <a href="../privacy.html" lang="en" hreflang="en">English</a>
+        </nav>
+      </header>
+      <div class="page-title">
+        <h1>Kebijakan Privasi</h1>
+        <p>Terakhir diperbarui: 6 November 2026</p>
+      </div>
+    </div>
+  </div>
+
+  <main class="wrap">
+    <article class="legal">
+      <p>Saku adalah aplikasi macOS gratis dan open source buatan Gianne Angely. Saku menaruh berbagai alat di notch MacBook. Kebijakan ini menjelaskan data apa yang dipakai Saku, ke mana data itu pergi, dan cara kamu tetap memegang kendali. Kebijakan ini berlaku untuk aplikasi Saku dan situs ini.</p>
+      <div class="summary">
+        <p><strong>Versi singkat:</strong> Saku tidak punya akun, analitik, atau server. Datamu tetap di Mac-mu. Kalau fitur yang kamu pakai butuh internet, Mac-mu langsung terhubung ke layanan itu, dan tidak ada yang dikirim ke pembuat Saku.</p>
+      </div>
+
+      <h2 id="google">Data pengguna Google (Google Tasks)</h2>
+      <p>Menyambungkan Google Tasks itu pilihan. Tanpa itu, tab To-do hanya jadi daftar di Mac-mu.</p>
+
+      <h3>Data yang diakses Saku</h3>
+      <p>Saat kamu masuk dengan Google di Pengaturan › To-do, Saku minta satu izin: scope Google Tasks <code>https://www.googleapis.com/auth/tasks</code>, yang ditampilkan Google sebagai "Lihat, edit, buat, dan hapus semua tugas Anda". Dengan izin itu, Saku membaca dan menulis daftar tugas dan tugasmu: judul, catatan, tenggat, status selesai, urutan, dan subtugas. Saku tidak minta nama, alamat email, kontak, Gmail, Drive, atau data Google lainnya. Kamu masuk lewat halaman Google sendiri di browser, jadi Saku tidak pernah melihat kata sandi Google-mu.</p>
+
+      <h3>Cara Saku memakainya</h3>
+      <p>Hanya untuk menampilkan tugasmu di notch dan menyinkronkannya dua arah: perubahan yang kamu buat di Saku dikirim ke Google Tasks, dan perubahan yang kamu buat di tempat lain, misalnya di HP, dibawa masuk ke Saku. Saku tidak memakai data pengguna Google untuk iklan, tidak membuat profil dari data itu, tidak memakainya untuk melatih model AI, dan tidak meneruskannya ke fitur Terjemah atau AI di Saku.</p>
+
+      <h3>Tempat penyimpanannya</h3>
+      <ul>
+        <li>Salinan daftar tugas dan tugasmu disimpan di Mac-mu, di <code>~/Library/Application Support/Saku/todo.json</code>, supaya tab To-do bisa dibuka saat offline dan perubahan saat offline dikirim belakangan.</li>
+        <li>Token masuk dari Google disimpan di Keychain macOS.</li>
+        <li>Saku tidak punya server. Tugasmu hanya berpindah antara Mac-mu dan Google.</li>
+      </ul>
+
+      <h3>Berbagi data</h3>
+      <p>Saku tidak membagikan, menjual, atau memindahkan data pengguna Google ke siapa pun. Pembuat Saku tidak pernah menerimanya.</p>
+
+      <h3>Memutus sambungan dan menghapus data</h3>
+      <ul>
+        <li>Pengaturan › To-do › Keluar meminta Google mencabut akses Saku, menghapus token dari Keychain, dan membuang daftar Google dari salinan di Mac-mu.</li>
+        <li>Kamu juga bisa mencabut akses Saku kapan saja di <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>.</li>
+        <li>Menghapus folder <code>~/Library/Application Support/Saku</code> menghapus semua data yang disimpan Saku di Mac-mu. Tugasmu di Google tetap ada di akun Google-mu.</li>
+      </ul>
+
+      <p>Penggunaan dan pemindahan informasi dari Google API oleh Saku ke aplikasi lain akan mematuhi <a href="https://developers.google.com/terms/api-services-user-data-policy">Kebijakan Data Pengguna Layanan Google API</a>, termasuk persyaratan Penggunaan Terbatas (Limited Use).</p>
+
+      <h2>Google Calendar dan Pengingat Apple</h2>
+      <p>Saku tidak masuk ke Google untuk kalendermu. Saku membaca dan menambah acara serta pengingat lewat data Kalender dan Pengingat di Mac-mu, yang disinkronkan macOS dengan akun yang kamu tambahkan di Pengaturan Sistem › Akun Internet. Saku tidak pernah melihat kata sandi akun-akun itu.</p>
+
+      <h2>Data yang tetap di Mac-mu</h2>
+      <p>Semua hal lain yang kamu simpan di Saku tetap di Mac-mu, di <code>~/Library/Application Support/Saku</code> dan preferensi aplikasi: catatan, riwayat clipboard dan snippet, timer, pelacak, tray file, bookmark, naskah teleprompter, riwayat kalkulator, warna tersimpan, item peluncur, cuaca kota pilihanmu, dan pengaturanmu. Kata sandi yang disalin dari pengelola kata sandi tidak pernah dicatat di riwayat clipboard. Kunci API untuk layanan cloud disimpan di Keychain macOS.</p>
+
+      <h2>Izin macOS</h2>
+      <p>macOS bertanya dulu sebelum Saku boleh memakai izin ini, dan Saku hanya butuh izin itu untuk fitur yang disebut:</p>
+      <ul>
+        <li><strong>Kalender dan Pengingat:</strong> untuk menampilkan acara dan pengingatmu serta menambah yang baru.</li>
+        <li><strong>Kamera:</strong> untuk cermin. Videonya tidak pernah keluar dari Mac-mu dan tidak pernah disimpan.</li>
+        <li><strong>Mikrofon dan pengenalan suara:</strong> supaya teleprompter mengikuti suaramu. Suaranya tetap di Mac-mu.</li>
+        <li><strong>Otomatisasi:</strong> untuk membaca dan mengontrol lagu yang diputar di Spotify, Musik, atau browser.</li>
+      </ul>
+
+      <h2>Saat Saku terhubung ke internet</h2>
+      <p>Saku terhubung ke internet hanya untuk fitur yang kamu pakai. Setiap permintaan langsung pergi dari Mac-mu ke layanan di bawah ini, dan berlaku kebijakan privasi layanan itu sendiri:</p>
+      <ul>
+        <li><strong>Cuaca:</strong> Open-Meteo menerima nama kota yang kamu cari dan lokasi kota yang kamu pilih. Saku tidak memakai lokasi Mac-mu.</li>
+        <li><strong>Sampul album:</strong> Spotify (tautan lagu yang sedang diputar) dan iTunes Search dari Apple (judul lagu dan nama artis). Untuk musik di browser, Saku menampilkan gambar sampul dari situs itu, misalnya YouTube.</li>
+        <li><strong>Tab Web:</strong> situs yang kamu buka, seperti browser biasa.</li>
+        <li><strong>Google Tasks:</strong> Tasks API milik Google, seperti dijelaskan di atas.</li>
+        <li><strong>Terjemah dan AI:</strong> hanya kalau kamu memilih layanan cloud dan memasukkan kunci API-mu sendiri, teks yang kamu kirim pergi ke layanan itu (Google Cloud Translation, DeepL, Anthropic Claude, atau Google Gemini). Terjemahan di perangkat dari Apple dan Apple Intelligence menjaga teksnya tetap di Mac-mu.</li>
+      </ul>
+
+      <h2>Hal yang tidak pernah dilakukan Saku</h2>
+      <ul>
+        <li>Tidak ada akun atau pendaftaran.</li>
+        <li>Tidak ada analitik, iklan, atau pelacakan.</li>
+        <li>Tidak menjual atau membagikan datamu.</li>
+        <li>Tidak ada server: pembuat Saku tidak pernah menerima datamu.</li>
+      </ul>
+
+      <h2>Situs ini</h2>
+      <p>Situs ini berisi beberapa halaman statis di GitHub Pages, tanpa cookie, analitik, atau skrip. GitHub bisa menyimpan catatan kunjungan seperti dijelaskan di <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">Pernyataan Privasi Umum GitHub</a>.</p>
+
+      <h2>Perubahan kebijakan</h2>
+      <p>Kalau cara Saku memakai data berubah, halaman ini diperbarui lebih dulu, dengan tanggal baru di bagian atas.</p>
+
+      <h2>Kontak</h2>
+      <p>Ada pertanyaan soal kebijakan ini? Buka issue di <a href="https://github.com/GianneAngely/saku-site/issues">github.com/GianneAngely/saku-site/issues</a>.</p>
+    </article>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>© 2026 Gianne Angely · <a href="https://opensource.org/license/mit">Lisensi MIT</a></p>
+      <nav aria-label="Kaki halaman">
+        <a href="./">Beranda</a>
+        <a href="terms.html">Ketentuan Penggunaan</a>
+        <a href="../privacy.html" lang="en" hreflang="en">English</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
